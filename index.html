@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="demo.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </head>
+    
+        <script>
+
+            function submitForm() {
+            
+            var emailPattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+            
+            var allowOnlyCharactes = /^[a-zA-Z]+$/;
+            
+            var allowName = /^[0-9a-zA-Z]+$/;
+            
+            var fname = document.getElementById("fname").value;
+            
+            var lname = document.getElementById("lname").value;
+            
+            var emailIs = document.getElementById("email").value;
+            
+            var passwordIs = document.getElementById("pwd").value;
+            
+            if( fname != '' && lname != '' && email != '' && passwordIs != ''){
+            
+            if (allowOnlyCharactes.test(fname) && fname != '') {
+                if (allowOnlyCharactes.test(lname) && lname != '') {
+                    if(emailPattern.test(emailIs) && emailIs != ''){
+                    if(allowName.test(passwordIs) && passwordIs != ''){
+                        alert("submitted successfully");
+                    } else {
+                        alert("password must containe 8 letter and allow numbers and charactess");
+                        
+                    }
+                    } else {
+                        alert("enter valid email");
+                    }
+                } else {		
+            alert("last name allows only characters");
+            return false;
+                }
+            } else {
+            
+            alert("First name allows only  characters");
+            return false;
+            
+            }
+            
+            } else {
+                alert("all fields are mandatory");
+                return false;
+            }
+            } 
+            
+            </script>
+            
+            <!-- #5fdf80 -->
+            
+            <style>
+            
+            h5 { margin: 0; }
+            .formMain {
+            
+            border: 1px solid #444;
+            width: 500px;
+            margin: auto;
+            
+            }
+            label { display: block;    margin-bottom: 10px; }
+            
+            .formArea { padding: 20px; 
+            display: inline-block;}
+            
+            .titleArea {
+            
+            background-color: #637a91;
+            text-align: center;
+            
+            color: #fff;
+            
+            padding: 10px;
+            
+            }
+            
+            .submitBtn {
+            
+            background-color: #5fdf80;
+                border: 1px solid #5fdf80;
+                margin-bottom: 10px;
+                width: 100%;
+                padding: 10px;
+                color: #fff;
+                border-radius: 5px;
+            
+            }
+            
+            .termsClass {
+            
+            color:#378ee6;
+            
+            }
+            .form-group { float: left;width: 50%;    margin-bottom: 10px; }
+            .form-group input{
+                height: 30px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                padding-left: 10px;
+                width: 94%;
+                }
+                
+                .conditionCheck {
+                    text-transform: capitalize;
+                }
+            
+            </style>
+            
+           
+            
+            <body>
+            
+            
+            
+            <div class="formMain">
+            
+            <h5 class="titleArea text-center">Get Started Today</h5>
+            
+            <div class="formArea">
+            
+            <form action="#" method="post" onsubmit="return submitForm()">
+            
+            <div class="">
+            
+            <div class="form-group">
+            
+            <label for="fname">First Name:</label>
+            
+            <input type="text" class="form-control" placeholder="First Name" id="fname">
+            
+            </div>
+            
+            <div class="form-group">
+            
+            <label for="lname">Last Name:</label>
+            
+            <input type="text" class="form-control" placeholder="Last Name" id="lname">
+            
+            </div>
+            
+            <div class="form-group">
+            
+            <label for="email">Email address:</label>
+            
+            <input type="email" class="form-control" placeholder="Enter email" id="email">
+            
+            </div>
+            
+            <div class="form-group">
+            
+            <label for="pwd">Password:</label>
+            
+            <input type="password" class="form-control" placeholder="Enter password" id="pwd" minlength="8">
+            
+            </div>
+            
+            <div class="">
+            
+            <button type="submit" class="btn btn-primary btn-block submitBtn">Claim Your First Trial</button>
+            
+            <h5 class="conditionCheck"><small>you are agreeing to our <a href="#"class="termsClass">Terms and Services</a><small></h5>
+            
+            </div>
+            
+            </form>
+            
+            </div>
+            
+            </div>
+            
+            
+            </body>
+            
+            </html>
+
+
+
+
+
+  
+   

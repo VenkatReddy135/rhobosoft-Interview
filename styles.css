@@ -1,0 +1,73 @@
+h5 { margin: 0; }
+.formMain {
+
+border: 1px solid #444;
+width: 500px;
+margin: auto;
+
+}
+label { display: block;    margin-bottom: 10px; }
+
+.formArea { padding: 20px; 
+display: inline-block;}
+
+.titleArea {
+
+background-color: #637a91;
+text-align: center;
+
+color: #fff;
+
+padding: 10px;
+
+}
+
+.submitBtn {
+
+background-color: #5fdf80;
+    border: 1px solid #5fdf80;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+
+}
+
+.termsClass {
+
+color:#378ee6;
+
+}
+.form-group { float: left;width: 50%;    margin-bottom: 10px; }
+.form-group input{
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+	width: 94%;
+	}
+	
+	.conditionCheck {
+		text-transform: capitalize;
+    }
+    
+.box1 {
+    border: 1px solid #ccc;
+    padding: 25px 30px;
+    text-align: center;
+}
+.mainArea {
+    float: left;
+}
+.testArea {
+    margin: auto;
+    padding: 20px;
+}
+.formArea {
+    margin-bottom: 20px;
+}
+.Color{
+    background-color:#00ff00;
+}
+
